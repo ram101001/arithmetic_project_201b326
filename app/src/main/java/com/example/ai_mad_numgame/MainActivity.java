@@ -95,6 +95,32 @@ else
 {
     correctanswer=operand1*operand2;
 }
+       correctButton= random.nextInt(4);
+if (correctButton==0)
+{
+    button1.setText(correctanswer+"");
+    button2.setText(correctanswer+1+"");
+    button3.setText(correctanswer-1+"");
+    button4.setText(correctanswer+2+"");
+} else if ( correctButton==1) {
+    button1.setText(correctanswer+1+"");
+    button2.setText(correctanswer-1+"");
+    button3.setText(correctanswer+2+"");
+    button4.setText(correctanswer+"");
+}
+else if ( correctButton==2) {
+    button1.setText(correctanswer+-1+"");
+    button2.setText(correctanswer+"");
+    button3.setText(correctanswer+1+"");
+    button4.setText(correctanswer+"");
+}
+else if ( correctButton==3) {
+    button1.setText(correctanswer+-1+"");
+    button2.setText(correctanswer+2+"");
+    button3.setText(correctanswer+"");
+    button4.setText(correctanswer+1+"");
+}
+
         if(matchCounter==3){    // if three matches are completed updatee the perfomrance in sharedpreferences
 
             matchCounter=0;
